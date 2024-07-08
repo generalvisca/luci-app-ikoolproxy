@@ -1,9 +1,8 @@
 name: Release-Build
 
 on:
-  push:
-    tags:
-      - "*"
+  watch:
+    types:started
 
 jobs:
   build:
